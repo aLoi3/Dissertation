@@ -1,0 +1,64 @@
+How does AI bring immersion to the games?
+
+“Video games are a great way of training AI algorithms 
+because they are designed to give human minds gradual progression into harder and harder challenges.” 
+(Luzgin, 2018)
+
+<1>
+* cutting-edge AI research
+* “Two of the core components of commercial game AI are pathfinding and finite state machines,” explains Julian Togelius
+* THE GOAL OF MOST AI RESEARCH INVOLVING GAMES IS TO BENCHMARK THE SOFTWARE’S SOPHISTICATION
+* Short says that most AI in games is the equivalent of “smoke and mirrors” — just sophisticated enough 
+to make you think you’re interacting with something intelligent, 
+but controlled and predictable enough to keep everything from going off the rails.
+* “You can prioritize the raw computing power or the solution-oriented thinking of the machine or things like that,” 
+she adds, “But in games we don’t value that almost at all. 
+It’s nice for [research] papers, but what game designers actually want is for players to have a good experience.”
+* “Typically when you design the game, you want to design an experience for the player. 
+You want to know what the player will experience when he gets to that point in the game. 
+And for that, if you’re going to put an AI there, you want the AI to be predictable,” Togelius says. 
+
+<2>
+* ‘OBSTACLE TOWER’ IS A MODERN-DAY ‘MONTEZUMA’S REVENGE’ DESIGNED FOR COMPUTERS TO PLAY
+* “A lot of people think that AI is about building better product recommendations at Amazon. 
+But at the end of the day, it’s really solving way more complex problems. 
+It’s about dealing with vision, control, and other cognitive challenges,” Lange says.
+
+<3>
+* And as it turns out, curiosity is a very effective motivator when teaching AI to play video games, too.
+* The agent starts playing the game random, but learns to improve its strategy through trial and error. - reinforcement learning
+* AI CAN BECOME ADDICTED TO RANDOM REWARDS, JUST LIKE HUMANS
+* Before they take a certain action they predict what the game will look like afterwards. 
+If they guess correctly, chances are they’ve seen this part of the game before. This mechanism is known as “prediction error.”
+* The big reason is that curiosity helps computers learn on their own.
+
+<4>
+* The definition that OpenAI team used for artificial curiosity was relatively simple: 
+The algorithm would try to predict what its environment would look like one frame into the future.
+
+
+https://www.theverge.com/2019/3/6/18222203/video-game-ai-future-procedural-generation-deep-learning - DONE
+https://www.theverge.com/2019/1/28/18200188/unity-obstacle-tower-challenge-ai-game-test-research-benchmark - DONE
+https://www.theverge.com/2018/11/1/18051196/ai-artificial-intelligence-curiosity-openai-montezumas-revenge-noisy-tv-problem - DONE
+https://qz.com/1366484/give-ai-curiosity-and-it-will-watch-tv-forever/ - DONE
+https://medium.com/@quasimik/monte-carlo-tree-search-applied-to-letterpress-34f41c86e238
+https://towardsdatascience.com/artificial-intelligence-in-video-games-3e2566d59c22
+https://openai.com/blog/reinforcement-learning-with-prediction-based-rewards/ - DONE
+https://openai.com/blog/openai-five/
+https://openai.com/blog/learning-montezumas-revenge-from-a-single-demonstration/ - DONE
+https://openai.com/blog/openai-baselines-ppo/ - DONE
+http://karpathy.github.io/2016/05/31/rl/ - DONE
+https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-77f014ec3f12
+https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization
+
+PAPERS:
+Human-level control through deep reinforcement learning
+Exploration by Random Network Distillation
+Large-Scale Study of Curiosity-Driven Learning
+https://pathak22.github.io/large-scale-curiosity/
+http://papers.nips.cc/paper/2378-policy-search-by-dynamic-programming.pdf
+Building Machines That Learn and Think Like People
+Trust Region Policy Optimization
+
+USEFUL SOURCES:
+https://gym.openai.com/
