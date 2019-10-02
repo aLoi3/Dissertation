@@ -52,6 +52,11 @@ https://medium.com/@jonathan_hui/rl-proximal-policy-optimization-ppo-explained-7
 https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization
 
 PAPERS:
+Exploiting Motion Capture to Enhance Avoidance Behaviour in Games
+Learning and Evaluating Human-Like NPC Behaviors in Dynamic Games
+Learning Human-like Opponent Behavior for Interactive Computer Games
+Learning human-like Movement Behavior for Computer Games
+Developing game AI agent behaving like human by mixing reinforcement learning and supervised learning
 Human-level control through deep reinforcement learning
 Exploration by Random Network Distillation
 Large-Scale Study of Curiosity-Driven Learning
@@ -59,6 +64,7 @@ https://pathak22.github.io/large-scale-curiosity/
 http://papers.nips.cc/paper/2378-policy-search-by-dynamic-programming.pdf
 Building Machines That Learn and Think Like People
 Trust Region Policy Optimization
+http://orangehelicopter.com/academic/papers/tog2018-emulating-human-play.pdf
 http://enzodesiage.com/wp-content/uploads/2017/08/tesauro-tdgammon-1995.pdf
 https://arxiv.org/pdf/1806.01363.pdf
 https://www.researchgate.net/profile/Gualtiero_Piccinini/publication/251383110_Turing%27s_Rules_for_the_Imitation_Game/links/59342fabaca272fc5541fb7f/Turings-Rules-for-the-Imitation-Game.pdf
