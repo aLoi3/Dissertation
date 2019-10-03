@@ -56,11 +56,11 @@ Exploiting Motion Capture to Enhance Avoidance Behaviour in Games
 Learning and Evaluating Human-Like NPC Behaviors in Dynamic Games
 Learning Human-like Opponent Behavior for Interactive Computer Games
 Learning human-like Movement Behavior for Computer Games
+Synthesizing Movements for Computer Game Characters
 Developing game AI agent behaving like human by mixing reinforcement learning and supervised learning
 Human-level control through deep reinforcement learning
 Exploration by Random Network Distillation
-Large-Scale Study of Curiosity-Driven Learning
-https://pathak22.github.io/large-scale-curiosity/
+Large-Scale Study of Curiosity-Driven Learning - https://pathak22.github.io/large-scale-curiosity/
 http://papers.nips.cc/paper/2378-policy-search-by-dynamic-programming.pdf
 Building Machines That Learn and Think Like People
 Trust Region Policy Optimization
