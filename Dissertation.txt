@@ -74,3 +74,9 @@ http://107.167.189.191/~vishnu/gameResearch/AI/Ghory04%20RL%20in%20board%20game.
 
 USEFUL SOURCES:
 https://gym.openai.com/
+
+GAMES WITH COMPLEX AI:
+Horizon Zero Dawn
+F.E.A.R
+Total War?
+S.T.A.L.K.E.R?
