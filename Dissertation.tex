@@ -1,0 +1,128 @@
+%% LaTeX template for BSc Computing for Games final year project dissertations
+%% by Edward Powley
+%% Games Academy, Falmouth University, UK
+
+%% Based on:
+%% bare_jrnl.tex
+%% V1.4b
+%% 2015/08/26
+%% by Michael Shell
+%% see http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.8b or later) with an IEEE
+%% journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/pkg/ieeetran
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall the IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%*************************************************************************
+
+
+\documentclass[journal]{IEEEtran}
+
+\usepackage{graphicx}
+% Insert additional usepackage commands here
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Your title here}
+%
+%
+% author name
+\author{Your name here}
+
+% The paper headers -- please do not change these, but uncomment one of them as appropriate
+% Uncomment this one for COMP320
+\markboth{COMP320: Research Review and Proposal}{COMP320: Research Review and Proposal}
+% Uncomment this one for COMP360
+% \markboth{COMP360: Dissertation}{COMP360: Dissertation}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+The abstract goes here.
+\end{abstract}
+
+\section{250-word Proposal}
+Artificial Intelligence (AI) plays a crucial role in certain games making it much more engaging and enjoyable to play. However, it's not always a good idea to have unbeatable enemies or allies. Thus, I will be discussing AI methods that would make the game more appealing. 
+
+I've long been interested in AI and how developers could improve players' experience using different methods. Therefore, I want to research some techniques that could potentially be used in some games to increase immersion and make it more entertaining. However, some methods could possible ruin some players' experiences depending on one's desire to play games. I have included this possible problem into my potential research questions. The following bullet points will briefly tell what general topic I would like to research and the research question itself:
+\begin{itemize}
+	\item Human-like behaviour in games - does AI that behaves like a human adds immersion and enjoyment to a game?
+	\item Human-like behaviour in games - does human-like AI ruins the experience of players that play games to escape from real life?
+	\item Reinforcement learning (RL) - could simple RL algorithms be more efficient in some games than complex ones?
+	\item AI agents as testers - could AI ease game developers' lives by thoroughly testing a particular system?
+\end{itemize}
+
+As for my artefact I would like to try and (1) recreate ("recreate" is a bold statement, but I couldn't think of anything else right now) some sort of human-like AI behaviour and test it in a game and thus have a survey; (2) Have no idea about the artefact for this topic; (3) A/B test the open-sourced algorithms on different types of games using simple and complex learning algorithms; (4) create an AI that would test some system in a game, potentially in a team project game.
+
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps.
+% 
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+% 
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by the IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+% 
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+% 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+\IEEEPARstart{A}{rtificial} intelligence (AI) in video games is very crucial when it's used as one of the main mechanics. Intelligent non-player characters (NPCs) are extremely hard to make due to the nature of it's complexity. The more complex it is the more outcomes developers will have to consider and the more problems will occur during development. 
+
+\section{Conclusion}
+The conclusion goes here.
+
+% references section
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+% Appendices
+
+\appendices
+\section{First appendix}
+Appendices are optional. Delete or comment out this part if you do not need them.
+
+% that's all folks
+\end{document}

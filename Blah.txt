@@ -1,0 +1,13 @@
+template-based evolution
+Towards Real-Time Behavioral Evolution in Video Games
+Quantifying the user experience
+How the Perceived Identity of a NPC Companion Influences Player Behavior
+Evolving Reactive NPCs for the Real-Time Simulation Game
+
+Find a small nuance to apply for AI that might make the AI behave like human would in a game
+-> Exploration behaviour
+-> Player when first play a game will most likely explore as much as they can in the beginning - environment, surroundings, asset details, texture details, etc.
+-> Use template-based behaviour? with modified exploration behaviour and show that to a person asking whether they can say which one is human, which one is 
+template-based behaviour and which one is my modified behaviour.
+-> Record each behaviour and show participants 2 of these - player and base behaviour | player and modified behaviour
+-> Use our game with changed camera view to first person and add the AI to test
