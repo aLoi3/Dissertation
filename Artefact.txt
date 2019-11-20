@@ -1,0 +1,6 @@
+Artefact:
+* Remember point where the agent was
+* Remember what the agent as doing at that point
+* Briefly interact with other agents
+* Make the agent look and feel curious
+* 
