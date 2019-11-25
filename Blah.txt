@@ -11,3 +11,6 @@ Find a small nuance to apply for AI that might make the AI behave like human wou
 template-based behaviour and which one is my modified behaviour.
 -> Record each behaviour and show participants 2 of these - player and base behaviour | player and modified behaviour
 -> Use our game with changed camera view to first person and add the AI to test
+
+Potentially useful papers:
+Curiosity-Driven Exploration Enhances Motor Skills of Continuous Actor-Critic Learner (IEEE)
