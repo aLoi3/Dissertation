@@ -1,0 +1,15 @@
+* Player recording
+* Simple behaviour recording
+* Simple + exploration behaviour recording
+
+Show participants recording of player and simple behaviour OR player and simple + exploration behaviour
+Randomize which one to show
+
+Questions:
+* Have you played first-person explorative walking simulators before?
+* If no, do you often explore the game's environment you're currently in?
+* How curious did the player/AI feel? (scale) (2 questions for both recordings)
+* Would you agree that A is smarter than B? or What behaviour felt smarter than the other?
+* Could you tell which recording was of a player and which of an AI? If yes, please answer next 2 questions
+* If yes, What made it distinguishable?
+* If yes, How smart did you feel the AI was? (scale)
