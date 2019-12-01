@@ -14,3 +14,14 @@ template-based behaviour and which one is my modified behaviour.
 
 Potentially useful papers:
 Curiosity-Driven Exploration Enhances Motor Skills of Continuous Actor-Critic Learner (IEEE)
+https://link.springer.com/article/10.1007/BF00130010
+https://ieeexplore.ieee.org/abstract/document/5738875
+https://ztcprep.com/images/sitestore/IELTS/Books/The_Turing_Test_Verbal_Behavior.pdf#page=286
+http://eprints.cs.vt.edu/archive/00000284/01/TR-92-04.pdf
+https://www.researchgate.net/profile/Kenneth_Ford/publication/220813820_Turing_Test_Considered_Harmful/links/09e4150d1dc67df32c000000.pdf
+https://www.researchgate.net/profile/Robert_French/publication/31037404_Subcognition_and_the_Limits_of_the_TuringTest/links/02e7e519132ce41388000000.pdf
+https://plato.stanford.edu/entries/turing-test/#ChiRoo
+
+Words:
+Extrinsic (outer, outside, external) - iz vne, vneshnij
+Intrinsic (inner, inside, internal) - iznutri, svojstvennyj
