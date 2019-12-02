@@ -31,6 +31,18 @@ http://alumni.media.mit.edu/~jorkin/gdc2006_orkin_jeff_fear.pdf
 https://www-gdcvault-com.ezproxy.falmouth.ac.uk/play/1013282/Three-States-and-a-Plan
 https://www.history.com/news/in-1950-alan-turing-created-a-chess-computer-program-that-prefigured-a-i
 
+Important:
+https://openai.com/blog/ingredients-for-robotics-research/
+https://openai.com/blog/learning-montezumas-revenge-from-a-single-demonstration/
+https://openai.com/blog/openai-baselines-ppo/
+https://openai.com/blog/better-exploration-with-parameter-noise/
+http://karpathy.github.io/2016/05/31/rl/
+https://ai.googleblog.com/2016/01/alphago-mastering-ancient-game-of-go.html
+https://towardsdatascience.com/artificial-intelligence-in-video-games-3e2566d59c22
+https://openai.com/blog/reinforcement-learning-with-prediction-based-rewards/
+https://www.theverge.com/2019/1/28/18200188/unity-obstacle-tower-challenge-ai-game-test-research-benchmark
+https://www.theverge.com/2019/3/6/18222203/video-game-ai-future-procedural-generation-deep-learning
+
 Words:
 Extrinsic (outer, outside, external) - iz vne, vneshnij
 Intrinsic (inner, inside, internal) - iznutri, svojstvennyj
