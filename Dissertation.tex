@@ -99,7 +99,7 @@ The abstract goes here.
 
 Explain curiosity - human behaviour often depends on person's intentions to explore. Why apply to AI? The aim of this paper is not to create curiosity-driven AI in Unreal Engine 4 (UE4), but to implement and test a particular behaviour and see how people react. Whether they like it or not, whether they think it behaves smart and etc. The aim of this implementation is to find a small nuance that can make the AI feel and act smarter.
 
-Throughout the last 30 years researchers are trying to create intelligent AI using different methods and algorithms. Recent achievements in such are are really worthy of respect, for example, AlphaGo or OpenAI (citation required). AI in games, however, is used to create non-player characters (NPCs), which can be enemies, merchants, companions and a lot more. Some of the very complex algorithms, such as reinforcement learning (RL), deep Q-learning, curiosity-driven, evolution-based (add more or change) are being used in old games such as Atari as a test. However, due to specificity of games, it is not always the best solution. Depending on game's design, very simple methods can be used instead, or less complex than previously mentioned ones. As an example, Monte Carlo Tree Search (MCTS) became a common one to use after the success of the game F.E.A.R (i guess?) or Finite State Machine (FSM), which is also a very common one these days and is being used in most known games (citation required). Another widely spread technic is behaviour tree, which I'm going to use for this paper.
+Throughout the last 30 years researchers are trying to create intelligent AI using different methods and algorithms. Recent achievements in such are are really worthy of respect, for example, AlphaGo being able to beat world champions in Go (citation) or OpenAI playing Atari games and, in most of them, getting higher scores than player(citation required). AI in games, however, is used to create non-player characters (NPCs), which can be enemies, merchants, companions and a lot more. Some of the very complex algorithms, such as reinforcement learning (RL), deep Q-learning, curiosity-driven, evolution-based (add more or change) are being used in old games such as Atari as a test. However, due to specificity of games, it is not always the best solution. Depending on game's design, very simple methods can be used instead, or less complex than previously mentioned ones. As an example, Monte Carlo Tree Search (MCTS) became a common one to use after the success of the game F.E.A.R (i guess?) or Finite State Machine (FSM), which is also a very common one these days and is being used in most known games (citation required). Another widely spread technique is behaviour tree, which I'm going to use for this paper.
 
 \section{Related Work} %~134
 The main focus of this paper is to (demonstrate) talk about a potentially valuable AI behaviour that is not complex yet efficient in demonstrating (implementing) smart AI. In Section III different AI implementation methods will be discussed, both complex and simple. Section IV will present (introduce) human's curiosity and discuss its importance towards one's willingness to discover and possibly relevant behaviour implementations to make smart AI. The testing material will be discussed in Section V, which will also include an explanation and use of Turing's test. Methodology and hypotheses will be reviewed in sections VI and VII respectively. The behaviour implementation will be made in Unreal Engine 4 (UE4) using our team's game for easier testing purpose as there will be enough assets to create a unique world which AI could be placed on.
@@ -110,7 +110,7 @@ The main focus of this paper is to (demonstrate) talk about a potentially valuab
 	\item Will be using my third year team project game to test the implementation on.
 \end{itemize}
 
-\section{AI Evolution or AI Importance in Games}
+\section{AI Importance in Games}
 Different methods that are used in AI learning - reinforcement, evolution-based, q-learning, curiosity-driven, etc. 
 \begin{itemize}
 	\item Why is it complex and important?
@@ -123,9 +123,9 @@ Artificial intelligence has a big place in the modern world. Robots are being cr
 
 AI for games is mainly developed to increase player's engagement and satisfaction aspects (maybe more), give the ability to set the difficulty level, create a relationship between the player and NPCs and much more (get more potential citation here). However, some games use it differently. Some games want to present players with feelings such as frustration, fear, anger (and more/possible citation). It is designers' desire to create such feelings depending on the game itself, which proves the flexibility of AI for games.
 
-Artificial intelligence is very commonly used to create feelings alongside an atmosphere of the game. For example, in Alien: Isolation, the alien enemy is the main threat and making the player fear it to create a horrifying experience. However, atmospehere around it also plays a huge role. Moreover, specifically in this game, the AI is very complex and smart. In fact, it has two brains (citation needed). First one playing the role of what the Alien actually sees and hears and the other is having a memory of the player's position at all times, in case the player hides for a long time to create constant progression and prevent the player from playing too carefully.
+Artificial intelligence is very commonly used to create feelings alongside an atmosphere of the game. For example, in Alien: Isolation, the alien enemy is the main threat and making the player fear it to create a horrifying experience. However, atmosphere around it also plays a huge role. Moreover, specifically in this game, the AI is very complex and smart. In fact, it has two brains (citation needed). First one playing the role of what the Alien actually sees and hears and the other is having a memory of the player's position at all times, in case the player hides for a long time to create constant progression and prevent the player from playing too carefully.
 
-Another excellent example of smart and flexible AI is Halo 2 developed by Bungie. Enemies in that game have roles of some kind: leaders, recruits and minions. These are not exact names for it, but to make it easier to distinguish while talking about. Minions are some small creatures, which are not very dangerous, because usually they walk alone or in very small groups and have little health and damage. However, they can be warned about the player or warn others of the player's position, which makes them more dangerous than they look like. Recruits, on the other, hand are much more dangerous not only because of damage and health, but also because they are lead by leaders, which they can communicate with. Moreover, leaders control several recruits and can communicate with other leaders giving them information about the player and potentailly requesting help or merging, depending on each goals. The most important stuff with this is that all enemies are somewhat connected with each other, which gives them the ability to communicate and give each other information necessary to hunt the player down.
+Another excellent example of smart and flexible AI is Halo 2 developed by Bungie. Enemies in that game have roles of some kind: leaders, recruits and minions. These are not exact names for it, but to make it easier to distinguish while talking about. Minions are some small creatures, which are not very dangerous, because usually they walk alone or in very small groups and have little health and damage. However, they can be warned about the player or warn others of the player's position, which makes them more dangerous than they look like. Recruits, on the other, hand are much more dangerous not only because of damage and health, but also because they are lead by leaders, which they can communicate with. Moreover, leaders control several recruits and can communicate with other leaders giving them information about the player and potentially requesting help or merging, depending on each goals. The most important stuff with this is that all enemies are somewhat connected with each other, which gives them the ability to communicate and give each other information necessary to hunt the player down.
 
 AI importance in games
 \begin{itemize}
@@ -133,10 +133,11 @@ AI importance in games
 	\item What does it help to accomplish in games? Satisfaction, level of difficulty, engagement, relationship between the player and NPCs
 	\item Has a big research area - making AI interesting and solving complex problems, which can be applied to real world problems with robots
 	\item Potentially talk about Halo 2 AI, which made the game very engaging and fun to play - as an example
+	\item Talk about what smart IA is like in games (video reference)
 \end{itemize}
 
 \section{Curiosity}
-Curiosity is a driving force for human's exploration, which consists of exploration, investigation and learning behaviours (cite "Curiosity: From Psychology to Computation"). It makes people chase for knowledge and investigate anything new and potentially valuable (for any reason). Moreover, curiosity is beneficial for people on two levels: the individual and the social levels (cite "Kashdan" from "Curiosity: From Psychology to Computation"). The first one is represented as the "innate love of learning and of knowledge... without the lure of any profit" (cite Loewenstein). The social level, on the other hand, is presented as "an ingredient for enhancing personal relationships" (cite "Curiosity: From Psychology to Computation").
+Curiosity is a driving force for human's exploration, which consists of exploration, investigation and learning behaviours \cite{wu2013curiosity} \cite{kashdan2004curiosity}. It makes people chase for knowledge and investigate anything new and potentially valuable (for any reason). Moreover, curiosity is beneficial for people on two levels: the individual and the social levels \cite{kashdan2010curiosity}. The first one is represented as the "innate love of learning and of knowledge... without the lure of any profit" \cite{loewenstein1994psychology}. The social level, on the other hand, is presented as "an ingredient for enhancing personal relationships" \cite{wu2013curiosity}.
 \begin{itemize}
 	\item Why do curiosity?
 	\item Examples of curiosity-driven behaviours
@@ -158,7 +159,7 @@ Curiosity is a driving force for human's exploration, which consists of explorat
 \section{Hypotheses}
 The aim of this project is to implement a simple exploration behaviour and test it to see whether it makes the AI smarter. This concern is the first hypotheses of the paper. Previously mentioned testing, which requires participants to distinguish player's behaviour and AI's behaviour presents us with another hypotheses. This time we are looking if the AI's behaviour is human-like. Hypotheses 3 depends on the participants' answers - if they cannot distinguish between player and AI, it proves that the AI is human-like, which delivers positive outcome (for this paper).
 
-These hypotheses are mainly aimed to see if exploration behaviour based on human's curiosity enhances smartness for AI in games. Due to AI primarily being used for enemies, idle states are often excluded from having "smart" behaviour. This is done in order to save memory for more important matter, such as combat. However, having a smart looking AI for walking simulators can therefore enhance player's experience in such games. This could become a decisive factor for developers that want to create a gorgeus walking simulator using both fantastic looking environment enhanced with smart and interesting artificial intelligence.
+These hypotheses are mainly aimed to see if exploration behaviour based on human's curiosity enhances smartness for AI in games. Due to AI primarily being used for enemies, idle states are often excluded from having "smart" behaviour. This is done in order to save memory for more important matter, such as combat. However, having a smart looking AI for walking simulators can therefore enhance player's experience in such games. This could become a decisive factor for developers that want to create a gorgeous walking simulator using both fantastic looking environment enhanced with smart and interesting artificial intelligence.
 \begin{itemize}
 	\item The AI will feel smarter
 	\item The participants won't notice the difference
@@ -167,8 +168,6 @@ These hypotheses are mainly aimed to see if exploration behaviour based on human
 
 \section{Methodology}
 The testing will be handled by presenting participants with two recordings in random order - (a) simple AI behaviour and player's behaviour or (b) modified simple AI with exploration behaviour and player's behaviour. In order to have player's behaviour I will have to ask a few people who are not familiar with the project to play the game and record their gameplay. 
-
-
 
 \subsection{Questionnaire}
 After the participants have viewed the recordings, they will be asked to complete a survey. The survey will provide the necessary data to analyse and later discuss the efficiency of the proposed exploration behaviour enhancing the AI's smartness. First of all, the survey will ask how often the participant plays games and whether they have played any first-person walking simulators. This will give the understanding of participant's experience with games, which might influence their insight of the research. The second part of this survey consists only of one questions asking which behaviour felt smarter in their opinion before getting the necessary data to analyse curiosity in each behaviour.
@@ -192,7 +191,7 @@ The conclusion goes here.
 % references section
 
 \bibliographystyle{IEEEtran}
-\bibliography{references}
+\bibliography{References}
 
 % Appendices
 
