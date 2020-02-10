@@ -1,0 +1,17 @@
+- Life Cycle Models -
+1) V-Model
+	* Each step is implemented by resorting to detailed documentation from the previous step
+	* Constant testing of every step (feature implementation)
+	* Eventual problems can be detected and resolver early
+	* The project goes from analysis of requirements and specifications, to architectural and detailed design, to coding
+	* Very rigid and there is little room for flexible adaptation
+
+2) Star Model
+	* Flexible - stages of development can be processed in various orders and various time frames
+	* The fundamental rule behind this premise is that each stage must be accompanied by extensive evaluation
+	* During development process, it is possbile to shift to any of them at any point, just as long as that stage is evaluated
+
+
+V-Model is more structured that requires documentation/design, which is what I'm going for (designing my AI behaviour). However the nature of it being 
+inflexible is a problem for me due to the need to observe player behaviour before designing AI. Star model incorporates that flexibility that I require. 
+It is also the type of workflow I usually go with, because I usually work on things I will like working on.
