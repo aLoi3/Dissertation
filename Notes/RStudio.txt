@@ -1,0 +1,9 @@
+- R Code -
+* Box Plot ?
+* Scatter Plot - most useful when looking at the difference between 2 values
+
+Links/Examples:
+http://www.sthda.com/english/wiki/qplot-quick-plot-with-ggplot2-r-software-and-data-visualization
+https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
+https://www.statmethods.net/advgraphs/ggplot2.html
+https://dcgerard.github.io/stat_412_612/lectures/03_graphics/03_qplot_cheatsheet.pdf
