@@ -1,0 +1,10 @@
+First automation test were successful, however, by observing it, I noticed that when the agent interacts with the object, the object does not zoom towards the agent. 
+Therefore, I need to test whether the object zooms in and out as well. Also, from observing, it felt like the interactable object did not highlight. Possibly, due to 
+inaccurate camera position as it is rotated with agent's head.
+
+Fixed:
+* Object zoom was fixed - apparently, the timeline I used for smooth zoom in/out was broken or deleted (from inside).
+
+Side Notes:
+* Highlight for AI does work, however, as I mentioned before, due to camera's inaccuracy, the object is not highlighted even when being looked at.
+* Separate maps for different tests.
