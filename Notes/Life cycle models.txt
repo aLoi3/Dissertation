@@ -15,3 +15,8 @@
 V-Model is more structured that requires documentation/design, which is what I'm going for (designing my AI behaviour). However the nature of it being 
 inflexible is a problem for me due to the need to observe player behaviour before designing AI. Star model incorporates that flexibility that I require. 
 It is also the type of workflow I usually go with, because I usually work on things I will like working on.
+
+
+file:///C:/Users/mzcdo/Downloads/9781461492535-c2.pdf
+https://link.springer.com/chapter/10.1007/978-3-319-00804-2_3
+https://www.researchgate.net/publication/221440322_Improving_software_testing_by_observing_practice

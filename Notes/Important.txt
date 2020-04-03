@@ -31,6 +31,8 @@ https://www-gdcvault-com.ezproxy.falmouth.ac.uk/play/1013282/Three-States-and-a-
 https://www.history.com/news/in-1950-alan-turing-created-a-chess-computer-program-that-prefigured-a-i
 
 Important:
+http://planiart.usherbrooke.ca/files/Rabin%202002%20-%20AI%20Game%20Programming%20Wisdom.pdf
+
 https://ieeexplore.ieee.org/abstract/document/5738875 - Measure of smartness
 https://openai.com/blog/ingredients-for-robotics-research/
 https://openai.com/blog/learning-montezumas-revenge-from-a-single-demonstration/

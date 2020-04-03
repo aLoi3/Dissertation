@@ -1,0 +1,31 @@
+* Self-evaluation (in one of the appecdices)
+* Better introduction - what is the purpose of my research and what are the challenges
+* Better explain why use Turing's Test
+* Use roadmap (what is a roadmap?)
+* More reliable sources (AI game programming wisdom)
+* Use more sources in particular parts, quotes and own ideas
+* Consider other games series as an example
+* More specific challenge - move that to the introduction
+* Use italics for game names
+* Page numbers are required for quotations
+* List the hypotheses in a table/diagram
+* Computing Artefact should have it's own sections with lifecycle, testing, techniques (with pseudo-code), etc.
+
+- New Paragraphs -
+* Life cycle
+* Test plan??
+* Data management plan
+* Data analysis
+
+- Current Sections -
+1) Methodology
+* How am I doing the group allocation, video allocation and another (randomly is not enough)
+
+
+elucidation of the problem and the objectives of the project 
+an in-depth investigation of the context and literature, and where appropriate, other similar products (this section is likely to be emphasised less for an IEng project) 
+where appropriate, a clear description of the stages of the life cycle undertaken 
+where appropriate, a description of how verification and validation were applied at these stages
+where appropriate, a description of the use of tools to support the development process 
+a critical appraisal of the project, indicating the rationale for any design/implementation decisions, lessons learnt during the course of the project, and evaluation 
+(with hindsight) of the project outcome and the process of its production (including a review of the plan and any deviations from it) 
