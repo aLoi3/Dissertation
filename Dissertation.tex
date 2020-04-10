@@ -93,7 +93,7 @@
 This paper examines the value of exploration extension for simple artificial intelligence behaviour that potentially enhances its perception of smartness. There are many identifiers for \textit{smartness}, however, this will be discussed in the paper with proposed measurements for \textit{smart} AI in todays' games. Due to the nature of this project, curiosity will also be included both in psychological and computational aspects. Moreover, this paper will look into AI importance for games and why it is considered one of the best ways to test real life applications, such as robotics, autonomous driving cars, data mining and much more. The application this paper is proposing could possibly be considered for video game genre walking simulator or robotic in particular. Finally, data will be discussed, providing analysis on whether proposed exploration extension is capable of improving AI's smartness element.
 \end{abstract}
 
-\section{Introduction}
+\section{Introduction} % Definitely add some stuff
 % The very first letter is a 2 line initial drop letter followed
 % by the rest of the first word in caps.
 % 
@@ -116,7 +116,7 @@ AI in video games is crucial when it's used as one of the main mechanics. Intell
 Some of the very complex algorithms, such as reinforcement learning (RL), deep Q-learning, curiosity-driven, evolution-based and a lot more are being used in video games as testbeds for different disciplines that vary from training algorithms \cite{aiinvideogames}\cite{robotplayground} to robotics \cite{schmidhuber2006developmental}\cite{colledanchise2018behavior}\cite{brady1985artificial}\cite{oudeyer2004intelligent} to Go \cite{schaul2011measuring}\cite{alphago}. However, due to the specificity of games, it is not always the best solution. Depending on the game's design, simple methods or less complex ones can be used instead of previously mentioned algorithms. As an example, Finite State Machine (FSM, Figure \ref{fig:fsm}) became a common one to use after the success of the game F.E.A.R with only using three FSM states \cite{orkin2006three} or Monte Carlo Tree Search (MTCS, Figure \ref{fig:mcts}) \cite{chaslot2008monte}, which has been used in creation of a new paradigm for Go \cite{gelly2011monte}\cite{gelly2012grand}. %288
 
 \begin{figure}
-	\includegraphics[width=\linewidth]{UnrealBehaviourTree.jpg}
+	\includegraphics[width=\linewidth]{Images/UnrealBehaviourTree.jpg}
 	\caption{Behaviour Tree in Unreal Engine}
 	\label{fig:ubt}
 \end{figure}
@@ -124,18 +124,18 @@ Some of the very complex algorithms, such as reinforcement learning (RL), deep Q
 A more simple yet very effective technique for AI creation is behaviour tree (BT). It has first been introduced by Isla \cite{gdchalo2} in videogames such as Halo and is now commonly integrated into game engines like Unreal Engine\footnote{\label{engine}Unreal Engine 4: https://www.unrealengine.com/en-US/} (UE4), which is what this project is going to use. It is believed, that BTs are ``highly modular, flexible and reusable" \cite{colledanchise2017behavior}. Particularly in UE4, BTs are supported by a visual representation of nodes - tasks, decorators and services - which is being introduced in Figure \ref{fig:ubt}. In fact, this is how BTs work - have a root node where the behaviour starts that leads to sequences and selectors, which are getting executing tasks depending on the current state of the game. This can be seen in Figure \ref{fig:bt}. %127
 
 \begin{figure}
-	\includegraphics[width=\linewidth]{MCTS.jpg}
+	\includegraphics[width=\linewidth]{Images/MCTS.jpg}
 	\caption{Monte Carlo Tree Search \cite{lou2017}}
 	\label{fig:mcts}
 \end{figure}
 
 \begin{figure}
-	\includegraphics[width=\linewidth]{FSM.jpg}
+	\includegraphics[width=\linewidth]{Images/FSM.jpg}
 	\caption{Finite State Machine \cite{lou2017}}
 	\label{fig:fsm}
 \end{figure}
 
-\section{Related Work} %213
+\section{Related Work} %213 Check feedback and reference another paper
 The main focus of this paper is to demonstrate a potentially valuable AI behaviour that is not complex yet efficient in enhancing smart AI. In section different AI implementation methods will be discussed, both complex and simple as well as why and how AI is used both in games and real life. This will include human curiosity and discuss it from a psychological view, why it's one of the main factors towards human's willingness to learn and gain new knowledge and some relevant learning algorithm implementations to make interesting and smart AI. Turing's Test will also be included in this section, which will describe it's use, advantages, and disadvantages and why it's used as a testing method for this project. Moreover, it will describe how smartness is going to be measured in this context. Methodology and hypotheses will be reviewed in sections III and IV respectively. The methodology will also include research artefact, introduce to what the participants will be asked to do and how data will be collected. The proposed behaviour implementation will be handled in Unreal Engine 4.22.3 using our team's game, which can be found in appendix \ref{appendix:a}, for easier testing purpose as there will be enough assets to create a unique world which AI could be tested on.
 
 \subsection{AI Importance in Games} %382
@@ -146,7 +146,7 @@ AI for games is mainly developed to increase a player's engagement and/or satisf
 Of course, not every game must have AI, but what's the most frustrating a game can have is experience ruining AI. In which case, immersion breaks and players start complaining about the game being "unplayable" even though it's only enemies or friends behaving inappropriately or silly. Indeed, when players want to have a relaxing time playing a game, which is broken by AI only is upsetting. This again shows how important AI is for games, which requires a considerable amount of effort put into to create fun and engaging experience. So, to prove this point, the next couple of paragraphs will present and discuss the successful use of AI creating either positive or negative emotions in (1) Alien: Isolation and (2) Halo 2.
 
 \begin{figure}
-	\includegraphics[width=\linewidth]{BehaviourTree.PNG}
+	\includegraphics[width=\linewidth]{Images/BehaviourTree.PNG}
 	\caption{Behaviour Tree \cite{chris2014}}
 	\label{fig:bt}
 \end{figure}
@@ -168,33 +168,34 @@ Curiosity-driven learning in games can show some fascinating results. In \cite{b
 
 The way curiosity-driven learning works is that the AI is given curiosity element into its learning and therefore it start to explore its environment. However, having only curiosity-driven learning is not always beneficial. (citation here) uses next-state prediction extension to improve curiosity-driven AI. The algorithm behind next-state prediction is that AI tries to predict what state of the game the AI will be in in the next frame. This kind of extension had success in exploring games and eventually getting higher scores than human players. However, there's one problem researchers stumble upon - noisy-TV problem. In fact, it totally break the AI while the algorithm is still working as intented. The meaning behind it is when the AI sees a random sequence of images in front of it, it tries to predict what the next image will be, therefore, getting stuck watching it. Thus, it is called noisy-TV problem, due to old TVs black and white screen noise it has when not working.
 
-\subsection{Turing's Test}
+\subsection{Turing's Test} \label{turing}
 ``I believe that in about fifty years it will be possible to program computers... to make them play the imitation game so well that an average interrogator will not have more than 70 per cent chance of making the right identification after five minutes of questioning" \cite{alan59turing}. These are the words of Alan Turing, who inspired the creation of machine learning \cite{hayes1995turing}. He created an imitation game, which is a testing game that considers whether a machine can think \cite{alan59turing}. The way it originally works is an interrogator, that stays apart from the other two people that are a different gender, questions these two subjects. The goal of the interrogator is to identify which of the two is the man and which is the woman \cite{alan59turing}. However, there are different interpretations of this game. Specifically for AI testing, one of the subjects is a machine and the other is human. A computer terminal is used in this case to question subjects \cite{livingstone2006turing}. %167
 
 However, this has been criticized in many ways \cite{hayes1995turing}\cite{sweeney2003s}\cite{crockett1994turing}\cite{livingstone2006turing}. In fact, some consider, that researchers are trying to only pass this test no matter what, thus excluding the important details of their implementation \cite{hayes1995turing}. It has become a standard for AI these days and therefore researchers tend to lean towards confirming the null hypothesis \cite{hayes1995turing}. Another issue proposed in \cite{hayes1995turing} is that it is not always clear what the study is trying to detect. It has to be clear at all times what is being measured and what exactly that measurement represents. %92
 
 Even though Turing's test is being criticised very broadly, this project is still going to use this kind of test. However, it will not be identical to the original one nor be similar to the imitation game. In fact, there will be no subjects and only an interrogator. Therefore, the interrogator, or in other words, participant, will not be able to ask questions, but only view the AI and human behaviours and try to distinguish them. Thus, most of the criticism presented in \cite{hayes1995turing}\cite{sweeney2003s}\cite{crockett1994turing}\cite{livingstone2006turing} will not be mitigated. So, how will this paper measure proposed "smartness" of AI? Practically, there are no certain measurements for intelligence thereby researchers make up their own measurements for AI depending on their study. Though one statement sums up all the aspects of intelligent agents pretty clearly - ``Intelligence is a very general mental capability that, among other things, involves the ability to reason, plan, solve problems, think abstractly, comprehend complex ideas, learn quickly and learn from experience." \cite{gottfredson1997mainstream}. Paper \cite{legg2007universal} proposes measures for an intelligent agent to be the ``ability to achieve goals in a wide range of environments.". As this project is looking particularly into exploration extension for AI behaviour, this statement becomes appropriate. %202
 
-\section{Hypotheses}
+\section{Hypotheses} %To reword
 The aim of this project is to implement a simple exploration extension for AI behaviour based on human's curiosity. Therefore, this project's first hypothesis is that exploration extension will perceive AI smartness compared to non-curious AI. The second hypothesis aims the participants to distinguish the player's behaviour from AI's behaviour, which will be provided by the questionnaire data. After analysing this data, the results will show whether the curious behaviour is leaning towards human-like, which will prove or disprove this project's hypothesis.%82
 
-[Put a hypotheses table here after I change the wording]
+\begin{table}
+	\includegraphics[width=\linewidth]{Images/Hypothesis.PNG}
+	\caption{Hypothesis}
+	\label{tab:hypothesis}
+\end{table}
 
 These hypotheses are mainly aimed to see if exploration behaviour based on human's curiosity enhances smartness for AI in games. Due to AI in games primarily being used for NPCs and concentrated on combat systems, idle states are often excluded from having "smart" behaviour. This is done in order to save the computer's resources for a more important matter, such as combat. However, having a smart looking AI for walking simulators can, therefore, enhance a player's experience in such genres. This could become a decisive factor for developers that want to create a gorgeous walking simulator using a fantastic looking environment enhanced with smart and interesting artificial intelligence. %108
 
-\section{Methodology}
+\section{Methodology} %Probably reword?
 \begin{table}
-	\includegraphics[width=\linewidth]{MethodologyTable.PNG}
+	\includegraphics[width=\linewidth]{Images/MethodologyTable.PNG}
 	\caption{Methodology}
 	\label{tab:methodology}
 \end{table}
 The testing of the hypotheses will be handled by separating participants into four groups, two main groups and two sub-groups, randomly chosen and shown video recordings selected at random using random number generator, see Table \ref{tab:methodology}. The first group will be presented with non-curious AI behaviour and the human player's behaviour or vice versa. The second group, on the other hand, will be introduced with curious AI behaviour, which was enhanced by exploration extension, and human player's behaviour or vice versa. All of this will be done randomly to minimise bias towards either side as much as possible. %89
 
-\subsection{Research Artefact} %171
-For the proposed hypotheses testing the project will be using our team project game that is made using Unreal Engine 4 with a few changes in the game to represent first-person walking simulator and can be found in appendix \ref{appendix:a}. The environment in the game will also be changed in order to more accurately generate curiosity from both AI and player perspectives. Moreover, the exploration behaviour this paper is going to test will be implemented using Behaviour Tree. The behaviour will be thoroughly tested for any ` experience ruining errors and pilot-tested before the start of the research. Afterward, it will be recorded and, during the testing process, data will be gathered from participants. Another AI behaviour will also be recorded before the data gathering as well as human's behaviour. Both AI behaviours will have the same base and only one will be enhanced by exploration. Also, all the recordings will be handled by the free recording software called Open Broadcaster Software (OBS) due to its simplicity and quality of entries.
-
 \begin{figure}
-	\includegraphics[width=\linewidth]{GPower.PNG}
+	\includegraphics[width=\linewidth]{Images/GPower.PNG}
 	\caption{Screenshot of a-priori power analysis to calculate sample size using G*Power available at: http://www.gpower.hhu.de/}
 	\label{fig:gpower}
 \end{figure}
@@ -202,50 +203,96 @@ For the proposed hypotheses testing the project will be using our team project g
 \subsection{Participants} %201
 Due to the need for a human player's behaviour, seven to eight people will be asked to play the game and record their gameplay. This necessity does not require a lot of participants and, moreover, they will not be taking part in providing research data and are not counted towards the required sample size presented in Figure \ref{fig:gpower}. Ideally, they will have no to little experience with such games to generate a more curious nature of humans. The goal for these participants will be to explore the game's environment. However, they will not be told so to avoid bias towards having unnatural curiosity behaviour, which could influence the project's testing. Instead, they will have the ability to do whatever they desire. This will instead generate more natural behaviour and thought processes from these participants and will benefit this project's outcome. It will be handled in the first place before collecting the necessary data to analyse later in the paper. Player recordings will also help with AI development as they give an ability to observe player behaviours that could potentially be implementated for AI to imitate human-like actions.
 
-The participants that are going to take part in the research and answer the questionnaire will likely be from different disciplines both inside and outside of Falmouth University's Games Academy due to bigger audience variety and experience in such field. There will be two groups of participants, each group being divided into another two sub-groups (see Table \ref{tab:methodology}), observing different recordings of human player and AI behaviours that are selected randomly as shown in Figure \ref{fig:gpower}. The study will require a minimum of 70 participants, 35 of each main group, given the effect size of 0.8, which is considered large by Cohen's guidelines \cite{cohen1992power}. However, if the project brings more attention, the sample size could be increased accordingly, giving more data to analyse and potentially have sufficient results. %149
+The participants that are going to take part in the research and answer the questionnaire will likely be from different disciplines both inside and outside of Falmouth University's Games Academy due to bigger audience variety and experience in such field. There will be two groups of participants, each group being divided into another two sub-groups, see Table \ref{tab:methodology}, observing different recordings of human player and AI behaviours that are selected randomly as shown in Figure \ref{fig:gpower}. The study will require a minimum of 70 participants, 35 of each main group, given the effect size of 0.8, which is considered large by Cohen's guidelines \cite{cohen1992power}. However, if the project brings more attention, the sample size could be increased accordingly, giving more data to analyse and potentially have more sufficient results. %149
 
-\subsection{Questionnaire} \label{data} %204
-After the participants have viewed the recordings, they will be asked to complete a survey. The survey will provide the necessary data to analyse and later discuss the efficiency of the proposed exploration behaviour enhancing the AI's smartness. First of all, the survey will ask how often the participant plays games and whether they have played any first-person walking simulators. This will give an understanding of the participant's experience with games, which might influence their insight into the research. The second part of this survey consists only of one question asking which behaviour felt smarter in their opinion before getting the necessary data to analyse curiosity in each behaviour. The last part consists of measuring behaviours' curiosity level using a scale from one to seven and asking the participants whether they have distinguished an AI from human. In which case, if the answer to this question is positive, they will be asked to answer two more questions that include a short description of the distinguishable features AI had and how smart it felt on a scale of one to seven. This will give more detailed data to analyse regarding AI. Furthermore, the sample code for analysing this data can be found in the appendix \ref{appendix:b}
+\subsection{Data Management Plan} \label{data} %204
+After the participants have viewed the recordings, they will be asked to complete a survey. The survey will provide the necessary data to analyse and later discuss the efficiency of the proposed exploration behaviour enhancing the perception of AI's smartness. Data accumulated from participants will give a general conception of their experience with games, concretely with first-person exploration simulators, and their rate of perspicacity for AI and player behaviours. 
+\begin{table}
+	\includegraphics[width=\linewidth]{Images/QA1.PNG}
+	\caption{Questions of the first part of the questionnaire}
+	\label{tab:qa1}
+\end{table}
+As shown in Table \ref{tab:qa1}, the first survey part intends to give a construal of their experience with games and first impression of the provided recordings. Moreover, enjoyment from exploring game environments is withal expected to affect how they rate both AI and player deportments. The query for group number provides a possibility to connect subsequent questions in the analysis. The last two questions intend to gain a first thought answer, which is considered a genuine one \cite{huntsinger2009first} due to not having any explicit impact. Thus, having a first thought answer gives a veritable impression on both behaviours. Moreover, depending on the last answer, the particpant will be given different last questions. 
 
-\subsection{Data Management Plan}
-[Add tables of questions]
-[Talk about why specifically these questions, how am I going to interpret it]
+\begin{table}
+	\includegraphics[width=\linewidth]{Images/QA2Positive.PNG}
+	\caption{Questions of the second part of the questionnaire if the answer to the last question of part one with positive}
+	\label{tab:qa2pos}
+\end{table}
+
+\begin{table}
+	\includegraphics[width=\linewidth]{Images/QA2Negative.PNG}
+	\caption{Questions of the second part of the questionnaire if the answer to the last question of part one with negative}
+	\label{tab:qa2neg}
+\end{table}
+
+Data from the second part of this survey commences with an overview of participator's ability to distinguish AI from player.It also provides rates of curiosity and smartness of AI and player deportments, see Table \ref{tab:qa2pos}. The first few questions inquire for the potential to distinguish AI from player as well as how facilely they could distinguish them and how confident they are about their faculty to differentiate the two. It enables for a more rigorous analysis by granting some extra data to expand from. It is not as decisive as the rest of the queries, but it may, however, influence the final results. The last questions are the most imporant ones granting data to analyse the perception of AI's smartness. However, if the participant could not distinguish AI from player it prooves the AI is human-like. Also, a different second part of the questionnaire is given if the answer was negative, which can be seen in Table \ref{tab:qa2neg}. It provides additional data on behaviours' curiosity and smartness level.
+
+Due to the nature of this study, linear scales from the second part are the main source of hypothesis validation. Moreover, this rating method will allow in a precise analysis of the provided data for hypothesis validation. The main reason for using a linear scale is that it grants an ideal and easy measurement for proving or disproving research's hypothesis. Also, data analysis code can be found in the appendix \ref{appendix:b}.
 
 \subsection{Ethics}
-Ethics had to be concerned due to the Falmouth Research Ethics Policy. For both parts of data collection no personal data was collected that could identify a specific participant. Hence, the data is considered low-risk. However, having two parts of data collection, two different consent forms and informations sheets had to be written depending on the data collected during that part. Information sheets had to be writted to give participants' a brief idea of what the research study is about. It also states that the participation is entirely voluntary and could be withdrawn at any time without giving any reason. These can be seen in the study's repository [add footnote to dissertation repo here].
+Ethics had to be concerned due to the Falmouth Research Ethics Policy. For both parts of data collection no personal data was collected that could identify a specific participant. Hence, the data is considered low-risk. However, having two parts of data collection, two different consent forms and informations sheets had to be written depending on the data collected during that part. Information sheets had to be writted to give participants' a brief idea of what the research study is about. It also states that the participation is entirely voluntary and could be withdrawn at any time without giving any reason. These can be seen in the study's repository\footnote{\label{dissertation}Dissertation repository: https://gamesgit.falmouth.ac.uk/users/tm200066/ repos/dissertation/browse}.
 
 For the first part of data collection a consent form stating that participant's gameplay will be recorded had to be mentioned. Thus, a different consent form requesting their agreement of participation had to be made. However, as mentioned before, this part still has low-risk for personally-identifiable data, as nothing except for game screen was recorded. These participant were also asked to answer a few questions after playing, which were not necessary, but potentially valuable to improve or imitate player actions for AI as well as used in analysis. This is further discussed in Section \ref{data}.
 
-Second part of data collection would also require these papers, however, there's still no personal data required. The only questions that were asked to answer are mentioned in Section \ref{data}. This data is also stored anonymously, same as the previously mentioned one, and will be retained for approximately 6-month period. Afterwards, all data will be deleted to prevent any information leakage outside this study anytime.
+Second part of data collection would also require these papers, yet no personal data is required. The only questions that were asked to answer are mentioned in Section \ref{data}. This data is also stored anonymously, same as the previously mentioned one, and will be retained for approximately 6-month period. Afterwards, all data will be deleted to prevent any information leakage outside this study anytime.
 
-Regarding game demo there are no legal, social or professional concerns. The demo is made exceptionally to test AI, where environment to observe is vivid and reach, and doesn't serve any purpose for human player gameplay. The assets used in the demo are free and were downloaded from Unreal Engine Marketplace [add footnote here???] and are credited in the text file in the research artefact's repository [add footnote to artefact repo here].
+Regarding game demo there are no legal, social or professional concerns. The demo is made exceptionally to test AI, where environment to observe is vivid and reach, and doesn't serve any purpose for human player gameplay. The assets used in the demo are free and were downloaded from Unreal Engine Marketplace\footnote{\label{marketplace}Unreal Engine 4 Marketplace: https://www.unrealengine.com/marketplace/en-US/store} and are credited in the text file in the research artefact's repository\footnote{\label{artefact}Computing artefact repository: https://gamesgit.falmouth.ac.uk/users/ tm200066/repos/computing-artefact/browse}. % Don't forget to credit used free assets
+
+% http://www.michalorzelek.com/blog/tutorial-creating-outline-effect-around-objects/ - outline effect credit
 
 %These participants will be asked to given an information sheet in the survey itself to understand the purpose of this study and what they are asked to do as well as being able to withdraw at any time. In addition, a consent form will be provided to sign, saying that their participation is voluntary, before starting the study. 
 
 \section{Computing Artefact}
-\subsection{Introduction}
+The computing artefact is a first-person walking simulator that has no intristic goals due to the main objective being implementation of artificial intelligence and it's testing. There are two AI behaviours - simple and extended. Simple having only waypoint movement, whereas extended having both simple's AI behaviour and exploration extension, see Figure \ref{fig:implementedAI}. This is done due to the nature of this study, where a basic AI behaviour had to be implemented and afterwards enhanced with exploration extension for Turing's Test, that was described in Section \ref{turing}. However, for a proper Turing's test a human behaviour had to be recorded. It was not only used for testing but also for AI implementation, attempting to mimic player's actions.
 
+The players as well as AI are granted several features for a better imitation of environment exploration game. The game is going to be referred as \textbf{demo} in the paper. Players were given full freedom so as to produce a more natural gameplay, which is used for Turing's Test and AI's development. Due to all players being students of Games Academy in Falmouth's University, their behaviour in the demo has been extraordinary. They have not been going through a predefined path, therefore, it generated some enthralling data. However, entirely emulate player's behaviour is impossible, so only a few changes were applied. This is due to a limited amount of time given for the artefact's development. 
 
 \subsection{AI Behaviours}
+\begin{itemize}
+	\item Put design of the behaviours
+	\item Explain these behaviours
+	\item Why did I choose to use these specific features
+	\item Why did I choose to have head rotation when the view is in first-person
+	\item What were the difficulties??
+	\item Using Unreal Engine and Behaviour Trees
+\end{itemize}
 
+\begin{figure}
+	\includegraphics[width=\linewidth]{Images/ImplementedAI.PNG}
+	\caption{UML diagram of implemented AI behaviour: Simple AI having only right behaviour, whereas extended AI having both.}
+	\label{fig:implementedAI}
+\end{figure}
 
-\subsection{Life Cycle}
-\cite{isaias2015information}
-For this research artefact a combination of V-model and star-model have been chosen. This is done with the fact that one is more structured regarding design, implementation and testing. However it lacks freedom of choice in terms of task allocation. It was beneficial for the artefact to allow more flexibility in development due to variety of behaviour required and some features for both AI and player to grant for better imitation of game exploration. However, consistent testing was required to verify that all the important features are working as well as AI behaviour are acting as expected, which V-model allows very well. If any of the features or behaviours break during the development process, an act of redesigning or reworking ir required.
-A story board was being updated throughout the development whenever a task was in progress, completed or a new one added. In addition to that, notes have been taken during the development process to track current bugs and to-do tasks at the time.
+The simple AI behaviour has been used as a base for the extended behaviour as well as tested alongside in Turing's Test. The only action it has is waypoint movement. A very simple design has been chosen to implement, therefore, dedicating more time on exploration extension performance. The testing of this extension is also essential to verify the AI is functional and is ready for Turing's Test. The extended behaviour can be seen in Figure \ref{fig:implementedAI}. Moreover, it has other configurations implemented to augment the overall look and feel. These are: 
 
-\subsection{Testing}
-Artefact testing was handled regularly to ensure that the most important AI features were being functional. In order to keep track of these tests, a test plan was written beforehand to provide the necessary tests for the project. The test plan was written with a step-by-step guide of how a particular function will be tested as well as updated whenever the test was first handled. These tests were managed by two different methods: 
+\begin{itemize}
+	\item \textbf{Head rotation}, which is used to allow agent for a directional movement while observing the environment.
+	\item \textbf{Sprint} - used to imitate player sprinting around the level.
+	\item Ordained \textbf{custom navigation areas} inside waypoints that are used by an agent to emulate chaotic and unpredictable movement.
+\end{itemize}
+
+Even though both AI and player were played from first-person view and head rotation could not be identified by viewing recordings it has been supplemented with the intention to enhance it's look if it was to be implemented in an actual game. Players have also been given this feature called \textit{free look}, which is used in PlayerUnknown's Battlegrounds created by PUBG Corporation. It's a feature when players can move forward while looking around, which allows to create realistic human's sight if played in first-person. 
+
+\subsection{Life Cycle} % To review/finish - probably finished?
+The computing artefact has been completed within approximately 3 months, including testing, AI and level designs. It used a combination of V-model and star-model \cite{isaias2015information}.
+
+This is done with the fact that one is more structured regarding design, implementation and testing, whereas the other gives flexibility towards workflow. V-model also lacks freedom of choice in terms of task allocation. It was beneficial for the artefact to allow more versatility in development due to variety of behaviours required and some features for both AI and player to grant for better imitation of environment exploration. However, consistent testing was required to verify that all the important features are working as well as AI behaviours are acting as expected, which V-model yields. If any of the features or behaviours break during the development process, an act of redesigning or reworking is required.
+
+For keeping the development progress a story board was being updated throughout the development whenever a task was in progress, completed or a new one supplemented. In addition to that, notes have been taken during the development process to track up-to-date bugs and to-do tasks at the time. These will be available in the artefact's repository \ref{artefact}. A testing plan has also been designed to help with the artefact's testing. It was also being updated every time a test has been written and performed. Testing plan is further introduced in Section \ref{testing} and in Appendix \ref{appendix:testing}. 
+
+\subsection{Testing} \label{testing} %To finish
+Artefact testing was handled regularly to ensure that the most important AI features were being functional. In order to keep track of these tests, a test plan was written beforehand to provide the necessary tests for the project. The test plan was written with a step-by-step guide of how a particular function or features will be tested as well as updated whenever the test was first handled, either with success or a fail. These tests were managed by two different methods: 
 \begin{itemize}
 	\item Unreal Engine's built-in plugin - Automation system
 	\item Unit test
 	\item Observing??
 \end{itemize}
-Automation system is a system that automatically tests any features and/or functions if an appropriate code has been written. It drastically decreases the time of discovering bugs, which keeps the software with as fewer problems as possible. Due to complexity of keeping AI fully functional, such systems are very beneficial for both small and big projects. It had greatly helped detect any crucial issues regarding AI, especially having limited time for the development.
+Automation system is a system that automatically tests any features and/or functions if an appropriate code has been written. It drastically decreases the time of discovering bugs, which keeps the software with as fewer problems as possible \cite{automation}. Due to complexity of keeping AI fully functional, such systems are very beneficial for both small and big projects. It had greatly helped detect any crucial issues regarding AI, especially having limited time for the development.
 How was unit tests handled? were they even done?
 Testing by observing. Is it valuable?
 
-\section{Results}
+\section{Results and Analysis}
 \subsection{AI Improvements}
 
 \subsection{Player Behaviour}
@@ -289,18 +336,22 @@ As mentioned in the paper, project's computing artefact will be based of team's 
 \end{lstlisting}
 
 \section{Testing}
+\label{appendix:testing}
 Put any testing screenshots and test plan here.
 
 \section{Self-Reflection}
 Some introduction here - I hate my life and all that
 
 \subsection{Dispositional} %230
-Keeping motivation for the dissertation writing was hard due to the high enjoyment of the team game project. Throughout this academic year, I have been enjoying our team game project development. Team composition and relationship between each other have been positive from the very beginning. Therefore, I was dedicating all my time to our team and the game. Thus, keeping my motivation for the dissertation project was much less than game development. So, I was behind the schedule and my peers, which made me nervous that I will struggle a lot later. Eventually, it happened and I had to make myself concentrate entirely on the dissertation putting the game aside, which resulted in me constantly trying to keep motivation for work. Moreover, a world pandemic happened and everyone was forced to work from home, which made it even harder to inspire me to work. This could've potentially been avoided if only I have had a dedicated schedule for both my projects. A framework of at least a half an hour of work doing dissertation writing or artefact would've changed a lot. I would still be working on the game most of my time, however, with this structure, I could've been doing progress on my dissertation constantly. This would have made things much easier later on and grown a habit of having a dedicated schedule for working hours.
+Keeping motivation for the dissertation writing was hard due to the high enjoyment of the team game project. Throughout this academic year, I have been enjoying our team game project development. Team composition and relationship between each other have been positive from the very beginning. Therefore, I was dedicating all my time to our team and the game. Thus, keeping my motivation for the dissertation project was much less than game development. So, I was behind the schedule and my peers, which made me nervous that I will struggle a lot later. Eventually, it happened and I had to make myself concentrate entirely on the dissertation putting the game aside, which resulted in me constantly trying to keep motivation for work. Moreover, a world pandemic happened and everyone was forced to work from home, which made it even harder to inspire myself to work. This could've potentially been avoided if only I have had a dedicated schedule for both my projects. A framework of at least a half an hour of work doing dissertation writing or artefact would've changed a lot. I would still be working on the game most of my time, however, with this structure, I could've been doing progress on my dissertation constantly. This would have made things much easier later on and grown a habit of having a dedicated schedule for working hours.
 
 \subsection{Cognitive}
 Write about my understanding of AI implementation in Unreal?????
+Or talk about testing features and how it was my first experience with it
 
-\subsection{Affective}
+\subsection{Affective} %165 - don't have a SMART goal, kinda is the same as in dispositional domain
+Final year turned to be very stressful in the second study block. Computing artefact was very difficult to develop due to constant workflow for the team game project. Moreover, a world pandemic happened and it became more difficult to get enough participants for my dissertation. But the most frustrating experience was writing up the dissertation during horrible situation. Due to being forced to self-isolate, the working atmosphere changed, therefore, keeping motivation to work was hard. Trying to convince myself for work without having a dedicated schedule and having distractions around made it hard to concentrate and have things done or, atleast, started. Thus, whenever I was thinking about the upcoming deadline for the dissertation, which was really fast approaching without having to wake up early for University, made me stressful. This stress was either negative or positive. Either I would not be able to think or would start working because of the fact the deadline is so close.
+
 Stress and frustration from just thinking about the deadline that's very quickly approaching.
 
 \subsection{Procedural}
@@ -309,7 +360,11 @@ AI is prone to break a lot so debugging skills for such area is very useful???
 \subsection{Interpersonal}
 Supervisor meetings have helped greatly in keeping my head up as well as some pieces of advice from my peers. However, I felt like I had less help from these meetings due to my anxiety of asking for advice and thinking everything's alright.
 
+\subsection{Practise}
+Some of the features I thought would be useful to enhance player experience were not even used by half of the players.
+
 \subsection{Conclusion}
+Something to finish it up with?
 
 % Unused
 % This is essential because of the nature of some recordings to be likely of not providing the necessary curiosity for more accurate testing purpose (participants)
